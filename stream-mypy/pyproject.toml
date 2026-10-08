@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stream-mypy"
+version = "1.0.0"
+description = "Agent system for streaming LLM interactions"
+authors = ["Your Name <you@example.com>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+anthropic = "^0.31.0"
+openai = "^1.50.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.scripts]
+mypi = "stream_mypy.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
